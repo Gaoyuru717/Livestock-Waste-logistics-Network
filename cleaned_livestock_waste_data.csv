@@ -1,0 +1,4 @@
+id,farm_type,location,waste_volume,nitrogen_content,phosphorus_content,date_collected
+F001,Pig,Zone A,12.5,1.2,0.8,2025-03-01
+F002,Poultry,Zone B,9.8,0.9,0.6,2025-03-02
+F003,Cattle,Zone C,15.3,1.5,1.0,2025-03-03
