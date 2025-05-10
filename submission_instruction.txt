@@ -1,0 +1,24 @@
+
+STQD6324 Assignment 1 – Final Submission
+
+Student Name: [Your Full Name]
+Course: Master of Data Science and Analytics
+Module: STQD6324 Data Management
+Semester: 2, 2024/2025
+Submission Date: May 2025
+
+GitHub Repository:
+[Insert your GitHub repository URL here]
+
+GitHub Collaborator Added:
+bernardlkb@ukm.edu.my
+
+Submitted Files:
+- livestock_waste_analysis.ipynb: Google Colab notebook (Python)
+- hive_table_creation.hql: Hive table schema script
+- hive_data_cleaning.hql: Hive data cleaning + SQL analysis script
+- cleaned_livestock_waste_data.csv: Cleaned dataset output
+- README.md: Project documentation
+- submission_instruction.txt: This file
+
+All files have been uploaded to GitHub and verified to be reproducible.
