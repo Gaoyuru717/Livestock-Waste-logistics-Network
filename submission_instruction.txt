@@ -1,14 +1,15 @@
 
 STQD6324 Assignment 1 – Final Submission
 
-Student Name: [Your Full Name]
+Student Name: [Gaoyuru]
 Course: Master of Data Science and Analytics
 Module: STQD6324 Data Management
 Semester: 2, 2024/2025
 Submission Date: May 2025
 
 GitHub Repository:
-[Insert your GitHub repository URL here]
+[Here is the GitHub link to my project:
+http://gothub.com/Gaoyuru717/Livestock-Waste-Logistics-Network]
 
 GitHub Collaborator Added:
 bernardlkb@ukm.edu.my
