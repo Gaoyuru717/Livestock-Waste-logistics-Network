@@ -81,7 +81,7 @@ This project is **fully reproducible** using the provided Colab notebook and Hiv
 
 ## Author
 
-- Name: [Your Full Name]
+- Name: [Gaoyuru]
 - Course: STQD6324 Data Management
 - Semester: 2, 2024/2025
 - Supervisor: [bernardlkb@ukm.edu.my]
