@@ -14,7 +14,7 @@ livestock_waste_analysis.ipynb
 hive_creation.hql
 hive_data_cleaning.hql
 cleaned_livestock_waste_data.csv
-plots
+plots(product and node)
 README.md
 
 GitHub Collaborator Added:
