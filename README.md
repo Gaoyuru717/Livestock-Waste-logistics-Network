@@ -1,16 +1,16 @@
 
 # Livestock Waste Logistics Network Analysis
 
-This project focuses on the logistics network management of livestock waste for spatiotemporal control of nutrient pollution in water bodies. It is developed as part of the STQD6324 Data Management course (Semester 2, 2024/2025), using Python (Google Colab) and Apache Hive.
+This project focuses on the logistics network management of livestock waste for spatiotemporal control of nutrient pollution in water bodies. It is developed as part of the STQD6324 Data Management course , using Python (Google Colab) and Apache Hive.
 
 ## Objective
 
-To explore, clean, analyze, and visualize livestock waste data to:
+This objective analyzes livestock waste using encoded product types(e.g.,P1,P2,P3)and location codes(e.g.,N01,N02) to support logistical planning and environmental impact control.The analysis uses data visualization and Hive integgration to identify high-priority waste types and locations.
+
+In order to:
 - Understand spatial and temporal waste patterns
 - Optimize transport and treatment planning
 - Reduce nutrient pollution in rivers and lakes
-
----
 
 ## Tools Used
 
@@ -24,26 +24,24 @@ To explore, clean, analyze, and visualize livestock waste data to:
 ## Project Structure
 
 ```
-Livestock-Waste-Logistics-Network/
-│
-├── livestock_waste_analysis.ipynb         # Google Colab notebook
-├── hive_table_creation.hql                # Hive script to create table
-├── hive_data_cleaning.hql                 # Hive script to clean data and analyze
-├── cleaned_livestock_waste_data.csv       # Output from data cleaning step
-├── plots/                                 # Folder to save visualization images
-├── README.md                              # This file
-```
+Livestock-Waste-Logistics-Network
+
+livestock_waste_analysis.ipynb         # Google Colab notebook
+hive_creation.hql                      # Hive script to create table
+hive_data_cleaning.hql                 # Hive script to clean data and analyze
+cleaned_livestock_waste_data.csv       # Output from data cleaning step
+plots                                  # Folder to save visualization images
+README.md                              # This file
 
 ---
 
 ## Data Cleaning
 
-- Removed columns with over 30% missing values
-- Standardized column names
-- Dropped or imputed rows with missing critical values
-- Cleaned data saved as `cleaned_livestock_waste_data.csv`
+1)Removed columns with over 30% missing values
+2)Standardized column names
+3)Dropped or imputed rows with missing critical values
+4)Cleaned data saved as `cleaned_livestock_waste_data.csv`
 
----
 
 ## Visualizations
 
