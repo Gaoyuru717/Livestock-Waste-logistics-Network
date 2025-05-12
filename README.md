@@ -25,6 +25,7 @@ Dataset: Excel-based logistics and nutrient dataset on livestock waste
 
 Livestock-Waste-Logistics-Network
 
+Data List for Logistics Network Management of Livestock Waste for Spatiotemporal Control of Nutrient Pollution in Water Bodies.xlsx
 livestock_waste_analysis.ipynb         
 hive_creation.hql                      
 hive_data_cleaning.hql                 
