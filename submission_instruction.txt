@@ -10,6 +10,7 @@ Project Description:
 This project analyzes livestock waste using product codes (P1, P2, etc.) and node locations (N01, N02, etc.). It includes data cleaning with Python, visualizations, Hive table creation and query scripts, and a full README report.
 
 Submitted Files:
+Data List for Logistics Network Management of Livestock Waste for Spatiotemporal Control of Nutrient Pollution in Water Bodies.xlsx
 livestock_waste_analysis.ipynb
 hive_creation.hql
 hive_data_cleaning.hql
