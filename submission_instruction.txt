@@ -1,4 +1,4 @@
-Student Name: Gao Yuru
+  Student Name: Gao Yuru
 Student ID: P146408
 Course: STQD6324 Data Management
 Assignment: Assignment 1
@@ -10,12 +10,12 @@ Project Description:
 This project analyzes livestock waste using product codes (P1, P2, etc.) and node locations (N01, N02, etc.). It includes data cleaning with Python, visualizations, Hive table creation and query scripts, and a full README report.
 
 Submitted Files:
-livestock_waste_analysis.ipynb: Google Colab notebook (Python)
-- hive_table_creation.hql: Hive table schema script
-- hive_data_cleaning.hql: Hive data cleaning + SQL analysis script
-- cleaned_livestock_waste_data.csv: Cleaned dataset output
-- README.md: Project documentation
-- submission_instruction.txt: This file
+livestock_waste_analysis.ipynb
+hive_creation.hql
+hive_data_cleaning.hql
+cleaned_livestock_waste_data.csv
+plots
+README.md
 
 GitHub Collaborator Added:
 bernardlkb@ukm.edu.my
