@@ -12,10 +12,9 @@ This project analyzes livestock waste using product codes (P1, P2, etc.) and nod
 Submitted Files:
 Data List for Logistics Network Management of Livestock Waste for Spatiotemporal Control of Nutrient Pollution in Water Bodies.xlsx
 livestock_waste_analysis.ipynb
-hive_creation.hql
-hive_data_cleaning.hql
-cleaned_livestock_waste_data.csv
-plots(product and node)
+hive_livestock.hql
+cleaned_data.csv
+plots
 README.md
 
 GitHub Collaborator Added:
