@@ -1,7 +1,7 @@
 
 # Livestock Waste Data Analytics Project
 
-This project demonstrates a data science workflow applied to livestock waste management, a critical component in the environmental and agricultural sectors. It combines Python (for data cleaning and visualization) and Apache Hive (for scalable querying) to extract actionable insights from real-world livestock waste data.
+This project demonstrates a data science workflow applied to livestock waste management, a critical component in the environmental and agricultural sectors. It combines Python and Apache Hive to extract actionable insights from real-world livestock waste data.
 
 ## Table of Contents
 - [1. Introduction](#1-introduction)
@@ -35,24 +35,18 @@ The goal of this project is to explore and analyze livestock waste logistics and
 
 The dataset used for this analysis is derived from public sources on livestock waste logistics. The raw data was preprocessed and then stored in HDFS to enable distributed querying with Apache Hive.
 
-Filename: `cleaned_livestock_waste_data.csv`
+Filename: `cleaned_data.csv`
 
 ---
 
 ## 4. Data Cleaning (Python)
 
-All data cleaning was performed in a Jupyter Notebook using Pandas. The main cleaning steps included:
-
-- Removing empty or duplicate rows
-- Converting string-based numbers to `float`
-- Renaming columns to standardized names: `node`, `product`, `amount_kg_week`
-- Standardizing categorical values in the `product` column
-- Exporting the cleaned data to CSV format
+All data cleaning was performed in a Jupyter Notebook using Pandas. 
 
 The cleaned file was uploaded to HDFS using:
 ```bash
 hdfs dfs -mkdir -p /user/maria_dev/input/
-hdfs dfs -put cleaned_livestock_waste_data.csv /user/maria_dev/input/
+hdfs dfs -put cleaned_data.csv /user/maria_dev/input/
 ```
 
 ---
@@ -60,39 +54,6 @@ hdfs dfs -put cleaned_livestock_waste_data.csv /user/maria_dev/input/
 ## 5. HiveQL Analysis
 
 The cleaned data was then queried using Hive to perform basic aggregation and filtering.
-
-### Table Creation
-```sql
-CREATE EXTERNAL TABLE IF NOT EXISTS livestock_waste (
-    node STRING,
-    product STRING,
-    amount_kg_week DOUBLE
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-STORED AS TEXTFILE
-LOCATION '/user/maria_dev/input/';
-```
-
-### Sample Queries
-```sql
--- View sample data
-SELECT * FROM livestock_waste LIMIT 10;
-
--- Total waste by product type
-SELECT product, SUM(amount_kg_week) AS total_waste_kg
-FROM livestock_waste
-GROUP BY product
-ORDER BY total_waste_kg DESC;
-
--- Records per location (node)
-SELECT node, COUNT(*) AS record_count
-FROM livestock_waste
-GROUP BY node
-ORDER BY record_count DESC;
-```
-
----
 
 ## 6. Data Visualization
 
