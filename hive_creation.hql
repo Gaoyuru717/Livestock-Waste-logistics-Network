@@ -1,8 +1,0 @@
-CREATE TABLE IF NOT EXISTS livestock_waste (
-    node STRING,
-    product STRING,
-    amount_kg_week DOUBLE
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-STORED AS TEXTFILE;
