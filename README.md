@@ -39,7 +39,11 @@ README.md
 1)Removed columns with over 30% missing values
 2)Standardized column names
 3)Dropped or imputed rows with missing critical values
-4)Cleaned data saved as `cleaned_livestock_waste_data.csv`
+4)Cleaned data saved as `cleaned_data.csv`
+
+The cleaned file was uploaded to HDFS using:
+hdfs dfs -mkdir -p /user/maria_dev/input/
+hdfs dfs -put cleaned_data.csv /user/maria_dev/input/
 
 
 ## Visualizations and Analysis
