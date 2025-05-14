@@ -86,6 +86,15 @@ Two Hive scripts are included:
 
 These enable scalable SQL-based queries for weekly monitoring and decision-making.
 
+##Insights & Explanations
+
+Key insights derived from the data include:
+Certain products (e.g., P2, P4) contribute a disproportionately high volume of waste.
+Specific nodes act as high-intensity contributors to total waste volume.
+There are significant variances in weekly waste output between different nodes.
+These insights inform where intervention (logistics, policy) may be most needed.
+
+
 
 ## Conclusion
 
