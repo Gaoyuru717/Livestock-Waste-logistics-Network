@@ -1,7 +1,9 @@
 
-# Livestock Waste Logistics Network Analysis
+# Livestock Waste Logistics Network Analysis Project
 
 This project focuses on the logistics network management of livestock waste for spatiotemporal control of nutrient pollution in water bodies. It is developed as part of the STQD6324 Data Management course , using Python (Google Colab) and Apache Hive.
+
+---
 
 ## Objective
 
@@ -12,6 +14,8 @@ In order to:
 2)Optimize transport and treatment planning
 3)Reduce nutrient pollution in rivers and lakes
 
+---
+
 ## Tools Used
 
 **Google Colab** (Python)
@@ -19,6 +23,7 @@ In order to:
 **Pandas**, **Matplotlib**, **Seaborn**
 Dataset: Excel-based logistics and nutrient dataset on livestock waste
 
+---
 
 ## Project Structure
 
@@ -33,6 +38,7 @@ cleaned_livestock_waste_data.csv
 plots(product and node)                                
 README.md                             
 
+---
 
 ## Data Cleaning
 
@@ -45,8 +51,11 @@ The cleaned file was uploaded to HDFS using:
 hdfs dfs -mkdir -p /user/maria_dev/input/
 hdfs dfs -put cleaned_data.csv /user/maria_dev/input/
 
+---
 
 ## Visualizations and Analysis
+
+----
 
 ### 1. Total Waste Volume by Product Code
 
@@ -60,6 +69,7 @@ These codes likely correspond to high-volume livestock (e.g., swine, poultry).
 **Recommendation**:
 Prioritize transportation and treatment for P1 and P3 to reduce environmental risk.
 
+---
 
 ### 2. Total Waste Volume by Node
 
@@ -78,6 +88,8 @@ Focus transport routes starting from these locations.
 3. Use predictive modeling to schedule optimal waste transport.
 4. Apply Hive for real-time scalable querying on future data.
 
+---
+
 ## Hive Integration
 
 Two Hive scripts are included:
@@ -86,21 +98,33 @@ Two Hive scripts are included:
 
 These enable scalable SQL-based queries for weekly monitoring and decision-making.
 
-##Insights & Explanations
+---
+
+## Insights & Explanations
 
 Key insights derived from the data include:
-Certain products (e.g., P2, P4) contribute a disproportionately high volume of waste.
-Specific nodes act as high-intensity contributors to total waste volume.
-There are significant variances in weekly waste output between different nodes.
+
+- Certain products (e.g., `P2`, `P4`) contribute a disproportionately high volume of waste.
+- Specific nodes act as high-intensity contributors to total waste volume.
+- There are significant variances in weekly waste output between different nodes.
+
 These insights inform where intervention (logistics, policy) may be most needed.
 
+---
 
+## Recommendations
+
+**Policy Targeting**: Focus regulatory efforts on top waste-generating nodes.
+**Logistics Optimization**: Develop optimized transportation routes for high-volume products.
+**Waste Reuse**: Explore converting certain waste products into renewable energy or fertilizer.
+
+---
 
 ## Conclusion
 
-Despite the absence of product names, valuable insights were extracted using encoded fields. The project identified key product types and locations that require logistical attention and proposed actionable strategies to optimize waste management.
+This project illustrates how data science tools can be used to support sustainable agricultural practices. By combining Hive for scalable data processing and Python for cleaning and visualization, we gain deeper insight into livestock waste trends, enabling informed environmental decision-making.
 
-
+---
 
 ## Author
 
