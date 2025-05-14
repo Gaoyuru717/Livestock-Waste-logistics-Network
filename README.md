@@ -32,10 +32,9 @@ Livestock-Waste-Logistics-Network
 
 Data List for Logistics Network Management of Livestock Waste for Spatiotemporal Control of Nutrient Pollution in Water Bodies.xlsx
 livestock_waste_analysis.ipynb         
-hive_creation.hql                      
-hive_data_cleaning.hql                 
-cleaned_livestock_waste_data.csv      
-plots(product and node)                                
+hive_livestock.hql                                     
+cleaned_data.csv      
+plots                               
 README.md                             
 
 ---
@@ -90,13 +89,25 @@ Focus transport routes starting from these locations.
 
 ---
 
-## Hive Integration
+## HiveQL Analysis
 
-Two Hive scripts are included:
-'hive_table_creation_product_code.hql': Creates the main Hive table
-'hive_data_cleaning_product_code.hql': Filters and summarizes data by product
+After uploading the cleaned CSV data to HDFS, Hive was used to perform distributed SQL-like querying. Hive enables efficient processing of large datasets stored in Hadoop.
 
-These enable scalable SQL-based queries for weekly monitoring and decision-making.
+### Hive Table Definition
+
+An **external Hive table** was created to reference the cleaned CSV data stored in HDFS:
+
+
+**Explanation:**
+`EXTERNAL TABLE` is used so that the data in HDFS remains intact even if the Hive table is dropped.
+`FIELDS TERMINATED BY ','` matches the CSV structure.
+The `LOCATION` points to the HDFS directory where the cleaned CSV was uploaded using:
+ 
+### Data Verification & Aggregation Queries
+
+#### Preview the dataset
+#### Summarize waste amount by product
+#### Count number of entries per node
 
 ---
 
