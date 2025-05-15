@@ -51,7 +51,7 @@ Several datasets were initially considered for this project. However, due to iss
 1)Removed columns with over 30% missing values
 2)Standardized column names
 3)Dropped or imputed rows with missing critical values
-4)Cleaned data saved as `cleaned_data.csv`
+4)Cleaned data saved as `cleaning_data.csv`
 
 The cleaned file was uploaded to HDFS using:
 hdfs dfs -mkdir -p /user/maria_dev/input/
@@ -99,10 +99,6 @@ Focus transport routes starting from these locations.
 ## HiveQL Analysis
 
 After uploading the cleaned CSV data to HDFS, Hive was used to perform distributed SQL-like querying. Hive enables efficient processing of large datasets stored in Hadoop.
-
-### Hive Table Definition
-
-An **external Hive table** was created to reference the cleaned CSV data stored in HDFS:
 
 
 **Explanation:**
