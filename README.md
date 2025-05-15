@@ -39,6 +39,12 @@ README.md
 
 ---
 
+## Data Selection
+
+Several datasets were initially considered for this project. However, due to issues such as missing values and inconsistent formatting, most were excluded. The Supply Data was selected because it was clean, well-structured, and directly relevant to the project goals. 
+
+---
+
 ## Data Cleaning
 
 1)Removed columns with over 30% missing values
