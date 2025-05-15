@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS livestock_waste_ext;
 CREATE EXTERNAL TABLE livestock_waste_ext (
     node STRING,
     product STRING,
